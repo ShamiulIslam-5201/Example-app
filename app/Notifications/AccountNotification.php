@@ -44,7 +44,7 @@ class AccountNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('welcome'. $this ->notify_info = 'name' . 'to our Ecommerce site')
+                    ->line('welcome'. $this ->notify_info -> name . 'to our Ecommerce site')
                     ->action('Notification Action', url('/'))
                     ->line('Thank you for using our application!');
     }
